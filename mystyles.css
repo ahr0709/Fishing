@@ -1,0 +1,134 @@
+body {
+    background-color: #39598f;
+}
+
+h1{
+    text-align: center;
+}
+
+/* nav bar setting starts here */
+.navbar {
+  overflow: hidden;
+  background-color: grey;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 0rem solid 
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font size: 18px;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin:0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: pink;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px; blue
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: green;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a :hover {
+  background-color: blue;
+}
+
+.dropdown:hover .dropdown-content { 
+  display:block;
+}
+
+/* slideshow setting starts here */
+
+.carousel-container {
+    width: 500px;
+    flex-shrink: 0;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+.carousel-slide {
+    display: flex;
+    width: 50%;
+    height: 500px;
+  }
+  
+  #prevBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+.footer {
+    text-align: left;
+    background-color: black;
+    color: red;
+    font-size: 20px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 5;
+    font-size: 10px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Icons for YT, Twitter, Facebook */
+  .fab {
+    background: #55ACEE;
+    color: white;
+    font-size: 39px;
+  }
