@@ -12,7 +12,8 @@
     <title>Fishing</title>
 </head>
 <body>
-    <h1>NorthWest Fishing</h1>
+    <div class="header" style="background-image: url('https://images.unsplash.com/photo-1536045519399-406545bcca94?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80');"><h1>NorthWest Fishing</h1></div>
+
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -42,72 +43,53 @@
       </li>
       <button a class ="darkButton" onclick="myFunction()">Darkmode
       </button>
-      
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
-    <!--Slideshow-->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="google.com"><img class="d-block w-100" src="/img/fish1.jpg" alt="First slide"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="#"><img class="d-block w-100" src="/img/fish2.jpg" alt="Second slide"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="#"><img class="d-block w-100" src="/img/fish3.jpg" alt="Third slide"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="#"><img class="d-block w-100" src="/img/fish4.jpg" alt="Fourth slide"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="#"><img class="d-block w-100" src="/img/fish5.jpg" alt="Fifth slide"></a>
-          </div>
-          <div class="carousel-item">
-            <a href="#"><img class="d-block w-100" src="/img/fish6.jpg" alt="Sixth slide"></a>
+    <!--Card grid from Bootstrap-->
+    <div class="card">
+      <div class="row justify-content-center-around my-row">
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card shadow" style="display: inline-block; height: auto">
+            <div class="inner">
+              <a href="google.com"> <img src="img\Boat.jpg" class="card-img-top" alt="..."></a>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Boat</h5>
+              <p class="card-text ">A boat is a watercraft of a large range of types and sizes, but generally smaller than a ship, which is distinguished by its larger size, shape, cargo or passenger capacity, or its ability to carry boats. ... In modern naval terms, a boat is a vessel small enough to be carried aboard a ship.</p>
+              <a href="#" class btn btn-success>Learn More</a>
+            </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card shadow" style="display: inline-block; height: auto">
+            <div class="inner">
+              <a href="google.com"> <img src="img\fish4.jpg" class="card-img-top" alt="..."></a>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Squid</h5>
+              <p class="card-text ">Squid are cephalopods in the superorder Decapodiformes with elongated bodies, large eyes, eight arms and two tentacles. Like all other cephalopods, squid have a distinct head, bilateral symmetry, and a mantle.</p>
+              <a href="#" class btn btn-success>Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card shadow" style="display: inline-block; height: auto">
+            <div class="inner"><a href="google.com"> <img src="img\fish1.jpg" class="card-img-top" alt="..."></a></div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Trout</h5>
+              <p class="card-text">Trout are species of freshwater fish belonging to the genera Oncorhynchus, Salmo and Salvelinus, all of the subfamily Salmoninae of the family Salmonidae. The word trout is also used as part of the name of some non-salmonid fish such as Cynoscion nebulosus, the spotted seatrout or speckled trout.</p>
+              <a href="#" class btn btn-success>Learn More</a>
+            </div>
+          </div>
+        </div>
       </div>
-   
-
-    <div class=main-container>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia iusto labore officiis numquam aperiam nihil unde quam cupiditate fugiat magni fugit, similique culpa maxime nemo eligendi tempore adipisci ullam!
-        </p>
-    <h2>Squid fishing</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatibus deleniti maxime cupiditate eaque quod aliquid? Veniam id eveniet expedita, quam ea assumenda earum iure dolorum molestiae nemo? Excepturi, magni.
-
-        </p>
-    <h2>My story</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate error ipsum, a, iste ex quisquam eos eius qui amet, blanditiis similique dicta asperiores at quidem nobis sint! Neque, numquam excepturi?
-        </p>
-    <h2>My background</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis laborum aliquid, incidunt dolores qui et voluptate quae deserunt modi. Neque deleniti accusamus quae aperiam consequuntur, nostrum voluptatibus cumque facere.</p>
     </div>
-    
-
+   
+    <div style="text-align:center">
+      <iframe height="700" width="1000" src="https://www.youtube.com/embed?v=4NRXx6U8ABQ" frameborder="1"></iframe>
+  </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -119,13 +101,14 @@
 
 <div class="footer">
     Social
-    <p>
+    <p >
         <!-- Icons -->
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>    
+        <br>
+        Contact me <a href = "mailto: emailme@andyro.com">emailme@andyro.com</a>
     </p>
-    Contact me 
-    <a href = "mailto: emailme@andyro.com">emailme@andyro.com</a>
+
 </div>
 </html>

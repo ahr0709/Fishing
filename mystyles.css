@@ -1,5 +1,13 @@
-body {
-    background-color: #39598f;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: table;
+  background-color: #000026;
+  background-image: url("https://images.unsplash.com/photo-1546484377-82b1d71c4833?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dark-mode {
@@ -7,17 +15,15 @@ body {
   color: white;
 }
 
+.header{
+  background-color: #6FA3F7;
+}
+
 h1{
     text-align: center;
 }
 
 
-.footer {
-    text-align: left;
-    background-color: grey;
-    color: red;
-    font-size: 20px;
-}
 
 /* Style all font awesome icons */
 .fa {
@@ -37,7 +43,45 @@ h1{
   
   /* Icons for YT, Twitter, Facebook */
   .fab {
-    background: #55ACEE;
+    background: #192841;
     color: white;
     font-size: 39px;
   }
+
+.card {
+  background-color:white;  
+  display:inline-block;
+}
+
+.py-1{
+  margin: auto;
+}
+
+.inner{
+  overflow: hidden;
+  
+}
+
+.inner img{
+  transition: 2s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.5);
+}
+
+
+.footer {
+  text-align: left;
+  background-image: url("https://images.unsplash.com/photo-1562479287-bf7f585a4352?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTYzfHxvY2VhbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: white;
+  font-size: 20px;
+  display: table-row;
+  height: 0;
+}
+
+
+
+
