@@ -4,10 +4,7 @@ html, body {
   width: 100%;
   margin: 0;
   display: table;
-  background-color: #000026;
-  background-image: url("https://images.unsplash.com/photo-1546484377-82b1d71c4833?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: white;
 }
 
 .dark-mode {
@@ -15,38 +12,26 @@ html, body {
   color: white;
 }
 
-.header{
-  background-color: #6FA3F7;
-}
-
 h1{
     text-align: center;
 }
 
-
-
-/* Style all font awesome icons */
-.fa {
-    padding: 5;
-    font-size: 10px;
-    width: 25px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
   /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
+  .fab:hover {
+    opacity: 0.1;
   }
   
   /* Set a specific color for each brand */
   
   /* Icons for YT, Twitter, Facebook */
   .fab {
-    background: #192841;
+    background: black;
     color: white;
-    font-size: 39px;
+    font-size: 20px;
   }
+
+
+  /* this is card setting */
 
 .card {
   background-color:white;  
@@ -72,10 +57,8 @@ h1{
 
 
 .footer {
+  background-color: black;
   text-align: left;
-  background-image: url("https://images.unsplash.com/photo-1562479287-bf7f585a4352?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTYzfHxvY2VhbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-  background-repeat: no-repeat;
-  background-size:cover;
   color: white;
   font-size: 20px;
   display: table-row;
