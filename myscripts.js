@@ -1,5 +1,3 @@
-const layer1 = document.getElementById("boat");
-const layer2 = document.querySelector("fish");
 const bg = document.getElementById("bg");
 const moon = document.getElementById("moon");
 const mountain = document.getElementById("mountain");
@@ -18,3 +16,4 @@ window.addEventListener("scroll", function () {
   text.style.top = value * 1.2 + "px";
   
 });
+
