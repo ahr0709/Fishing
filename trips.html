@@ -20,49 +20,13 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="mystyles.css" />
+    <link rel="stylesheet" href="trips.css" />
 
     <link rel="icon" href="img\iconfinder_Food_C205_2427851.png">
 <body>
-   <!-- Header settings is over here-->
-   <div
-   style="
-     border: 1px solid rgba(51, 51, 51, 0.4);
-     background: rgba(51, 51, 51, 0.1);
-     padding: 0px;
-   "
- >
- <!-- Navabar-->
- <nav class="navbar navbar-expand-lg navbar bg-dark sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Andrew's Fishing</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="trips.html" style="padding-left: 25px"
-          ><i class="fas fa-mountain"></i>Trips</a
-        >
-        <a href="#" style="padding-left: 25px"
-          ><i class="fas fa-map"></i> Maps</a
-        >
-        <a href="https://tidesandcurrents.noaa.gov/tide_predictions.html?gid=1415" target="_blank" style="padding-left: 25px"
-          ><i class="fas fa-fish"></i> Fishing</a
-        >
-      </div>
-    </div>
-  </div>
-</nav>
+  <section class="showcase">
+  <div class="toggle"></div>
+  <div class="overlay"></div>
   <!--Card grid from Bootstrap-->
   <div class="card">
     <div class="row justify-content-center">
@@ -78,6 +42,7 @@
             <p class="card-text">
               The Grand Canyon (Hopi: Ongtupqa,[2] Yavapai: Wi:kaʼi:la,
               Navajo: Bidááʼ Haʼaztʼiʼ Tsékooh,[3][4] Spanish: Gran Cañón) is
+       
               a steep-sided canyon carved by the Colorado River in Arizona,
               United States. The Grand Canyon is 277 miles (446 km) long, up
               to 18 miles (29 km) wide and attains a depth of over a mile
@@ -144,19 +109,17 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer">
-    Social
-    <p>
-      <!-- Icons -->
-      <a href="#"><i class="fab fa-youtube"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-snapchat"></i></a>
-      <br />
-      Contact me <a href="mailto: emailme@andyro.com">emailme@andyro.com</a>
-    </p>
-  </div>
+    </div>
+  </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="trips.html">My Trips</a></li>
+        <li><a href="#">Maps</a></li>
+        <li><a href="#">Fishing</a></li>
+      </ul>
+    </div>
+
+      <script src="myscripts.js"></script>
 </body>
 </html>

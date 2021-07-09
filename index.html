@@ -20,145 +20,96 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="mystyles.css" />
 
-    <link rel="icon" href="img\iconfinder_Food_C205_2427851.png">
+    <link rel="icon" href="img\iconfinder_Food_C205_2427851.png" />
 
     <title>Fishing</title>
   </head>
-  <body> 
-<!-- Navabar-->
-    <nav class="navbar navbar-expand-lg navbar bg-dark sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Andrew's Fishing</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-            <a href="trips.html" style="padding-left: 25px"
-              ><i class="fas fa-mountain"></i>Trips</a
-            >
-            <a href="#" style="padding-left: 25px"
-              ><i class="fas fa-map"></i> Maps</a
-            >
-            <a href="https://tidesandcurrents.noaa.gov/tide_predictions.html?gid=1415" target="_blank" style="padding-left: 25px"
-              ><i class="fas fa-fish"></i> Fishing</a
-            >
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">My Store</h2>
+
+        <div class="toggle"></div>
+      </header>
+      <video
+        src="img/Pexels Videos 2344549 (2)-1_Trim.mp4"
+        muted
+        loop
+        autoplay
+      ></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Andrew's Fishing</h2>
+        <p>Welcome to my site. Please explore and check out my adventures!</p>
+        <button id="myBtn">Fish Count</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe
+              style="height: 800px; width: 450px"
+              src="//rss.bloople.net/?url=https%3A%2F%2Fwww.fpc.org%2Frss%2FrssAdultCounts.aspx&striphtml=true&forceutf8=true&type=html"
+            ></iframe>
+            <!-- https://rss.bloople.net/ -->
           </div>
         </div>
       </div>
-    </nav>
-    <!--Start of my scrolling-->
 
-    <section class="slideshow">
-      <img src="img\bg.jpg" id="bg" />
-      <img src="img\moon.png" id="moon" />
-      <img src="img\mountain.png" id="mountain" />
-      <img src="img\road.png" id="road" />
-      <h2 id="slideshow-text">Welcome</h2>
-    </section> 
+      <ul class="social">
+        <p>
+          <!-- Icons -->
+          <div class="wrapper">
+            <div class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </div>
+            <div class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <div class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </div>
+            <div class="icon github">
+              <div class="tooltip">Email</div>
+              <span><i class="fas fa-envelope-open"></i></span>
+            </div>
+            <div class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </div>
+          </div>
+          <br />
+          <a href="mailto: emailme@andyro.com">emailme@andyro.com</a>
+        </p>
+      </ul>
 
-    <div class="mainBody">
-              <!-- start sw-rss-feed code -->
-      <script type="text/javascript">
-        rssfeed_url = new Array();
-        rssfeed_url[0] = "https://www.fpc.org/rss/rssAdultCounts.aspx";
-        rssfeed_frame_width = "530";
-        rssfeed_frame_height = "700";
-        rssfeed_scroll = "off";
-        rssfeed_scroll_step = "6";
-        rssfeed_scroll_bar = "off";
-        rssfeed_target = "_top";
-        rssfeed_font_size = "12";
-        rssfeed_font_face = "";
-        rssfeed_border = "on";
-        rssfeed_css_url = "https://feed.surfing-waves.com/css/style6.css";
-        rssfeed_title = "on";
-        rssfeed_title_name = "";
-        rssfeed_title_bgcolor = "#3366ff";
-        rssfeed_title_color = "#fff";
-        rssfeed_title_bgimage = "";
-        rssfeed_footer = "off";
-        rssfeed_footer_name = "rss feed";
-        rssfeed_footer_bgcolor = "#fff";
-        rssfeed_footer_color = "#333";
-        rssfeed_footer_bgimage = "";
-        rssfeed_item_title_length = "50";
-        rssfeed_item_title_color = "#666";
-        rssfeed_item_bgcolor = "#fff";
-        rssfeed_item_bgimage = "";
-        rssfeed_item_border_bottom = "on";
-        rssfeed_item_source_icon = "off";
-        rssfeed_item_date = "off";
-        rssfeed_item_description = "on";
-        rssfeed_item_description_length = "120";
-        rssfeed_item_description_color = "#666";
-        rssfeed_item_description_link_color = "#333";
-        rssfeed_item_description_tag = "off";
-        rssfeed_no_items = "0";
-        rssfeed_cache = "878bab1830c920811d1f7b7177d08939";
-      </script>
-      <script
-        type="text/javascript"
-        src="//feed.surfing-waves.com/js/rss-feed.js"
-      ></script>
-      <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
-      <!-- end sw-rss-feed code -->
 
-      
-    <!--Youtube video section-->
-    <div class= "youtube" style="text-align: center">
-      <iframe
-        height="700"
-        width="1000"
-        src="https://www.youtube.com/embed?v=4NRXx6U8ABQ"
-        frameborder="5"
-      ></iframe>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">My Trips</a></li>
+        <li><a href="#">Maps</a></li>
+        <li>
+          <a
+            href="https://tidesandcurrents.noaa.gov/tide_predictions.html?gid=1415"
+            target="_blank"
+            >Fishing</a
+          >
+        </li>
+      </ul>
     </div>
-
-    </div>
-
-
-    <div class="footer">
-      Social
-      <p>
-        <!-- Icons -->
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-snapchat"></i></a>
-        <br />
-        Contact me <a href="mailto: emailme@andyro.com">emailme@andyro.com</a>
-      </p>
-    </div>
-
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"
-  ></script>
-  <script src="myscripts.js"></script>
-
+    <script src="myscripts.js"></script>
   </body>
 </html>

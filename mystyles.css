@@ -1,160 +1,364 @@
-html {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
-  width: 100%;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
   margin: 0;
-  display: table;
-  background-color: black;
-  max-height: 700px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Luminari', 'fantasy'
 }
-body {
-  margin-bottom: 100px;
-  background-color: #d3d3d3;
-  z-index: 0;
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-h1 {
-  text-align: center;
-  color:black;
-}
-
-.main {
-  background-color: black;
-}
-
-/* Navbar css*/
-.navbar-nav {
-  font-size: 25px;
-  float: none;
-  margin: 0 auto;
-  z-index: 1;
-  position: relative;
-  left: -135px; /* the width of the .navbar-brand class in negative px */
-}
-
-/* Add a hover effect if you want */
-.fab:hover {
-  opacity: 0.1;
-}
-
-/* Set a specific color for each brand */
-
-/* Icons for YT, Twitter, Facebook */
-.fab {
-  background: black;
-  color: white;
-  font-size: 20px;
-}
-
-/* this is card setting */
-
-.card {
-  background-color: white;
-  display: inline-block;
-}
-
-.py-1 {
-  margin: auto;
-}
-
-.inner {
-  overflow: hidden;
-}
-
-.inner img {
-  transition: 2s ease;
-  width: 100%;
-  height: 50%;
-}
-
-.inner:hover img {
-  transform: scale(1.5);
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: left;
-}
-
-/* Scrolling css styles under here  */
-
-.slideshow {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slideshow::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(to top, var(--clr-grey-10), transparent);
-  z-index: 10000;
-}
-
-.slideshow::after {
-  content: "";
+header
+{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: var(--clr-grey-10);
-  z-index: 1;
-  mix-blend-mode: color;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.slideshow img {
+ /* Menu toggle button */
+
+.toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(img/PinClipart.com_cempasuchil-clipart_1812493.png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* modal */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  height: 50%;
+}
+
+#myBtn{
+  
+color: white; /* Text color */
+
+font-size: 1.8rem;
+ 
+background-color: transparent; /* Remove background color */
+ 
+border: 1px solid #1C5597; /* Border thickness, line style, and color */
+ 
+border-radius: 5px; /* Adds curve to border corners */
+ 
+text-transform: uppercase; /* Make letters uppercase */
+}
+
+#myBtn:hover{
+  background-color: #D0E0F3;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Video playback */
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+
+.showcase video
+{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  pointer-events: none;
 }
-
-#slideshow-text {
+.overlay
+{
   position: absolute;
-  text-align: center;
-  color:black;
-  font-size: 10em;
-  z-index: 1;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-#road {
-  z-index: 1;
+/* text positioning */
+
+.text
+{
+  position: relative;
+  z-index: 10;
 }
 
-.mainBody {
-  margin-top: 0px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.5em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
 }
 
-.rss {
-  color: #ccc;
-  font-size: 10px;
-  text-align: center;
-  width: 100px;
-  height: 1000px;
-  margin-top: 0px;
+/* Our icons */
+
+
+.wrapper {
+  display: inline-flex;
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+
+
+ /* Menu bar setting  */
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.menu ul
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: px;
+  color: #111;
+}
+.menu ul li a:hover
+{
+  color: #03a9f4; 
+}
+
+/* mobile setting */
+
+@media screen and (max-width: 800px)
+{
+  html {
+    background: white;
+}
+.showcase video {
+   display: none;
+}
+.showcase{
+  background-image: url(img/Pexelvid_Moment.jpg);
+}
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 2em;
+  }
+  .text p
+  {
+    font-size: 1em;
+  }
+}
+

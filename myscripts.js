@@ -1,19 +1,34 @@
-const bg = document.getElementById("bg");
-const moon = document.getElementById("moon");
-const mountain = document.getElementById("mountain");
-const road = document.getElementById("road");
-const text = document.getElementById("slideshow-text");
-const secondText = document.getElementById("secondText");
+const menuToggle = document.querySelector('.toggle');
+const showcase = document.querySelector('.showcase');
 
-// Our slideshow
-window.addEventListener("scroll", function () {
-  let value = window.scrollY;
 
-  bg.style.top = value * 0.5 + "px";
-  moon.style.left = -value * 0.5 + "px";
-  mountain.style.top = -value * 0.15 + "px";
-  road.style.top = value * 0.15 + "px";
-  text.style.top = value * 1.2 + "px";
-  
-});
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  showcase.classList.toggle('active');
+})
 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
