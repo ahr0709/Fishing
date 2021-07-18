@@ -345,7 +345,9 @@ text-transform: uppercase; /* Make letters uppercase */
    display: none;
 }
 .showcase{
-  background-image: url(img/Pexelvid_Moment.jpg);
+  background-image: url('img/linda-xu-UGQpaq08Igw-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
   .showcase,
   .showcase header
