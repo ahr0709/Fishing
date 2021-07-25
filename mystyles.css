@@ -23,6 +23,7 @@ header .logo
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
  /* Menu toggle button */
@@ -69,34 +70,37 @@ header .logo
   padding: 20px;
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
-  height: 50%;
+  height: 70%;
 }
 
 #myBtn{
-  
-color: white; /* Text color */
-
-font-size: 1.8rem;
- 
-background-color: transparent; /* Remove background color */
- 
-border: 1px solid #1C5597; /* Border thickness, line style, and color */
- 
-border-radius: 5px; /* Adds curve to border corners */
- 
+  border: 2px solid rgb(48, 138, 186);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 rgb(48, 138, 186);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 text-transform: uppercase; /* Make letters uppercase */
 }
 
+
 #myBtn:hover{
-  background-color: #D0E0F3;
+  box-shadow: inset 0 0 0 50px rgb(92, 157, 191);
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+  color: black;
+  font-size: 50px;
   font-weight: bold;
+  align-items: left;
+  padding: 0%;
 }
 
 .close:hover,
@@ -313,7 +317,7 @@ text-transform: uppercase; /* Make letters uppercase */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 .menu ul
 {
@@ -332,6 +336,11 @@ text-transform: uppercase; /* Make letters uppercase */
 .menu ul li a:hover
 {
   color: #03a9f4; 
+}
+
+
+.fish-count{
+  height:1000px
 }
 
 /* mobile setting */
@@ -361,6 +370,19 @@ text-transform: uppercase; /* Make letters uppercase */
   .text p
   {
     font-size: 1em;
+  }
+
+  .fish-count{
+    height:900px;
+    width: 300px;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height: 70%;
   }
 }
 
