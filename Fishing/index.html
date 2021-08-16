@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="mystyles.css" />
+
+    <link rel="icon" href="img\iconfinder_Food_C205_2427851.png" />
+
+    <title>Fishing</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">My Store</h2>
+
+        <div class="toggle"></div>
+      </header>
+      <video
+        src="img/Pexels Videos 2344549 (2)-1_Trim.mp4"
+        muted
+        loop
+        autoplay
+      ></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Andrew's Fishing</h2>
+        <p>Welcome to my site. Please explore and check out my adventures!</p>
+        <button id="myBtn">Fish Count</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe class="fish-count"
+              src="//rss.bloople.net/?url=https%3A%2F%2Fwww.fpc.org%2Frss%2FrssAdultCounts.aspx&striphtml=true&forceutf8=true&type=html"
+            ></iframe>
+            <!-- https://rss.bloople.net/ -->
+          </div>
+        </div>
+      </div>
+
+      <ul class="social">
+        <p>
+          <!-- Icons -->
+          <div class="wrapper">
+            <div class="icon facebook" >
+              <div class="tooltip">Facebook</div>
+              <a href="https://www.facebook.com" target="blank"><span><i class="fab fa-facebook-f" ></i></span></a>
+            </div>
+            <div class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <a href="https://www.facebook.com" target="blank"><span><i class="fab fa-twitter"></i></span></a>
+            </div>
+            <div class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <a href="google.com" target="blank"><span><i class="fab fa-instagram"></i></span></a>
+            </div>
+            <div class="icon github">
+              <div class="tooltip">Email</div>
+              <span><i class="fas fa-envelope-open"></i></span>
+            </div>
+            <div class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </div>
+          </div>
+        </p>
+      </ul>
+
+
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="trips.html">My Trips</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="#">About Me</a></li>
+        <li>
+          <a
+            href="https://tidesandcurrents.noaa.gov/tide_predictions.html?gid=1415"
+            target="_blank"
+            >Fishing</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="myscripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="maps.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Maps</title>
+  </head>
+  <body>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <a href="index.html"><h4 class="text-white">Home</h4></a>
+
+            <a href="trips.html"><ol><p class="text-muted">My trips</p></ol></a>
+            <a href="https://tidesandcurrents.noaa.gov/tide_predictions.html?gid=1415"><ol><p class="text-muted">Fishing</p></ol></a>
+            <a href="#"><ol><p class="text-muted">About Me</span></ol></p>
+            <a href="#"><ol><p class="text-muted">My store</span></ol></p>
+
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+
+    <div id="map">Hello</div>
+
+    <ul class="social">
+      <!-- Icons -->
+      <div class="wrapper">
+        <div class="icon facebook">
+          <div class="tooltip">Facebook</div>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </div>
+        <div class="icon twitter">
+          <div class="tooltip">Twitter</div>
+          <span><i class="fab fa-twitter"></i></span>
+        </div>
+        <div class="icon instagram">
+          <div class="tooltip">Instagram</div>
+          <span><i class="fab fa-instagram"></i></span>
+        </div>
+        <div class="icon github">
+          <div class="tooltip">Email</div>
+          <span><i class="fas fa-envelope-open"></i></span>
+        </div>
+        <div class="icon youtube">
+          <div class="tooltip">Youtube</div>
+          <span><i class="fab fa-youtube"></i></span>
+        </div>
+      </div>
+    </ul>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_cOW9bfAnj9gVgOyRv5Wk1RVBQ5rAOrE&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="maps.js"></script>
+  </body>
+</html>
