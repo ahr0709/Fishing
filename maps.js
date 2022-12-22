@@ -2,7 +2,7 @@
 // When the user clicks the marker, an info window opens.
 
 function initMap() {
-  const uluru = { lat: 47.6, lng: -122 };
+  const uluru = { lat: 47.2529, lng: -122.4443 };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
     center: uluru,
