@@ -44,14 +44,9 @@ h1 {
   width: 100%;
 }
 
-/* Navbar css*/
-.navbar-nav {
-  font-size: 25px;
-  float: none;
-  margin: 0 auto;
-  z-index: 1;
-  position: relative;
-  left: -135px; /* the width of the .navbar-brand class in negative px */
+img{
+  height: 400px;
+  width: 400px
 }
 
 
